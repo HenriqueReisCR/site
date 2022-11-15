@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'font' ;
+    src: url(idroid.otf);
+}
+.primeiro{   
+    text-align: center;
+    background-color: white;
+    padding: 0px;
+    margin: 50px; 
+}
+.paragrafos{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#titulo{
+    text-align: center;
+    background-color: green;
+    padding: 0px;
+     
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+}
+.historia{
+    color: green;
+    text-align: left;
+    font-family: 'font';
+}
+.subtitulos{
+    color: green;
+    background-color: rgba(47, 156, 47, 0.219);
+    text-align: left;
+    font-family: 'font';
+}
+.tabelas{
+    text-align: left;
+}
+.aa{
+    text-align: left;
+    background-color: green;
+}
