@@ -10,7 +10,7 @@
 	--hue: 223;
 	--bg: hsl(var(--hue),10%,90%);
 	--fg: hsl(var(--hue),10%,10%);
-	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+	
 }
 *{
     margin: 0px;
@@ -34,11 +34,22 @@ header > h1{
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
+header > p{/*config cabeçalho*/
+    color: white;
+    font-size: 20px;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
 nav{
     background-color: var(--cor1);
     text-align: center;
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+    font-size: 20px;
 }
 nav > a{
     color: white;
@@ -153,4 +164,11 @@ main {
 	from { stroke-dashoffset: 10; }
 	25% { stroke-dashoffset: 295; }
 	to { stroke-dashoffset: 1165; }
+}
+footer p{
+    background-image: linear-gradient(to right, #F500DC, #18F5E0, #08A899);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
