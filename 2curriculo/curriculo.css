@@ -72,7 +72,7 @@ main a:hover{
     background-color: var(--cor3);
     color: var(--cor4);
 }
-div{/*rodapé*/
+div{
     background-color: var(--cor3);
     color: white;
     text-align: center;

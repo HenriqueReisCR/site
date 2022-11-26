@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 :root{
     --cor1:#2786A8;
     --cor2:#0F4B61;
@@ -8,28 +6,35 @@
     --cor4:#77C5E1;
     --cor5:#15495C;
 }
+:root {
+	--hue: 223;
+	--bg: hsl(var(--hue),10%,90%);
+	--fg: hsl(var(--hue),10%,10%);
+	
+}
 *{
     margin: 0px;
     padding: 0px;
+    border: 0;
+	box-sizing: border-box;
 }
 body{
-    background-color:var(--cor5);
-    
+    background-color: var(--cor5);
 }
-header{/*config cabeçalho*/
+header{
     background-color: var(--cor4);
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor5));
 }
-header > h1{/*config cabeçalho*/
+header > h1{
     color: white;
     font-size: 3em;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
- }
- header > p{/*config cabeçalho*/
+}
+header > p{
     color: white;
     font-size: 20px;
     max-width: 600px;
@@ -39,11 +44,11 @@ header > h1{/*config cabeçalho*/
     padding-left: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
 }
-nav{/*config menu*/
+nav{
     background-color: var(--cor1);
+    text-align: center;
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
-    text-align: center;
     font-size: 20px;
 }
 nav > a{
@@ -59,19 +64,7 @@ nav > a:hover{
     background-color: var(--cor5);
     color: #fff;
 }
-.nav__item-text{
-    color: white;
-    font-weight: bold;
-}
-.nav__item-btn{
-    color:white;
-}
-.nav__item-btn:hover{
-    color: black;
-}
-.nav__item-text:hover{
-    color: black;
-}
+
 p{
     font-size: 100px;
     text-align: center;
@@ -92,6 +85,34 @@ footer{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     text-align: center;
+}
+footer p{
+    background-image: linear-gradient(to right, #F500DC, #18F5E0, #08A899);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+div{
+    background-color: var(--cor5);
+    text-align: center;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.336);
+    padding: 10px;
+
+}
+div > a{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 1s;
+    border-radius: 5px;
+    font-size: 20px;
+}
+div > a:hover{
+    background-color: var(--cor1);
+    color: White;
 }
 main {
 	padding: 1.5em 0;
@@ -118,7 +139,7 @@ main {
 	animation-timing-function: cubic-bezier(0.42,0.17,0.75,0.83);
 }
 
-/* Dark theme */
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		--bg: hsl(var(--hue),10%,10%);
@@ -129,7 +150,7 @@ main {
 	}
 }
 
-/* Animations */
+
 @keyframes bump {
 	from,
 	42%,
@@ -159,11 +180,4 @@ main {
 	from { stroke-dashoffset: 10; }
 	25% { stroke-dashoffset: 295; }
 	to { stroke-dashoffset: 1165; }
-}
-footer p{
-    background-image: linear-gradient(to right, blue, blue, #18F5E0, #08A899);
-    color: black;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
